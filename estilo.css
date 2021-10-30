@@ -1,0 +1,45 @@
+#add-task{
+
+    border: black 1px solid;
+    border-radius: 4px;
+    width: 450px;
+    height: auto;
+    margin-left: 440px;
+    padding: 10px;
+
+}
+
+#task-name{
+
+    display: block;
+    width: 180px;
+    margin-bottom: 18px;
+
+}
+
+#task-desc{
+
+    margin-top: 18px;
+    margin-bottom: 18px;
+    display: block;
+    width: 442px;
+    height: 80px;
+    overflow-x: auto;
+    overflow-y: auto;
+
+}
+
+#btn-add{
+
+    margin-left: 365px;
+    background-color: #add8e6;
+    border: #add8e6 1px solid;
+    border-radius: 4px;
+    
+}
+
+#btn-add:hover{
+
+    background-color: #72bcd4;
+
+}
