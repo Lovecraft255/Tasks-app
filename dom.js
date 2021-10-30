@@ -4,13 +4,15 @@ const penndingTask = [];
 
 const completeTask = [];
 
+let penndingTaskDiv = document.getElementById("pendig-tasks");
+
 let taskCount = 0;
 
 btnAdd.addEventListener( "click" , () => {
 
-    let taskName = document.getElementById("task-name").textContent;
+    let taskName = document.getElementById("task-name").value;
 
-    let taskDesc = document.getElementById("task-desc").textContent;
+    let taskDesc = document.getElementById("task-desc").value;
 
     const task = {
 
@@ -31,15 +33,19 @@ btnAdd.addEventListener( "click" , () => {
 
     const descP = document.createElement("p");
 
-    titleH4.append( task.name );
+    titleH4.append( taskName );
 
-    descP.append( task.desc );
+    descP.append( taskDesc );
 
     taskDiv.setAttribute( "id" , "tarea");
 
     taskDiv.append( titleH4 );
 
     taskDiv.append( descP );
+
+    let penndingTaskDiv = document.getElementById("pendig-tasks");
+
+    penndingTaskDiv.append( taskDiv );
 
 
 } );
