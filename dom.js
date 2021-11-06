@@ -1,3 +1,41 @@
+function createTask(){
+
+    let taskName = document.getElementById("task-name").value;
+    let taskDesc = document.getElementById("task-desc").value;
+
+    taskCount += 1;
+
+    const task = {
+        id: taskCount,
+        name: taskName ,
+        desc: taskDesc
+
+    };
+
+    return task;
+
+}
+
+function addTask( task ){
+
+    const taskDiv = document.createElement("div");
+    taskDiv.classList.add("bordes");
+
+    const titleH4 = document.createElement("h4");
+    const descP = document.createElement("p");
+
+    titleH4.textContent = taskName;
+    descP.textContent = taskDesc;
+
+    taskDiv.setAttribute( "id" , taskCount);
+
+    taskDiv.append( titleH4 );
+    taskDiv.append( descP );
+
+    penndingTaskDiv.append( taskDiv );
+
+}
+
 let btnAdd = document.getElementById("btn-add");
 
 const penndingTask = [];
@@ -10,42 +48,11 @@ let taskCount = 0;
 
 btnAdd.addEventListener( "click" , () => {
 
-    let taskName = document.getElementById("task-name").value;
-
-    let taskDesc = document.getElementById("task-desc").value;
-
-    const task = {
-
-        name: taskName ,
-        desc: taskDesc
-
-    };
+    const task = createTask();
 
     penndingTask.push( task );
 
-    console.log( penndingTask );
-
-    taskCount += 1;
-
-    const taskDiv = document.createElement("div");
-
-    const titleH4 = document.createElement("h4");
-
-    const descP = document.createElement("p");
-
-    titleH4.append( taskName );
-
-    descP.append( taskDesc );
-
-    taskDiv.setAttribute( "id" , "tarea");
-
-    taskDiv.append( titleH4 );
-
-    taskDiv.append( descP );
-
-    let penndingTaskDiv = document.getElementById("pendig-tasks");
-
-    penndingTaskDiv.append( taskDiv );
+    addTask( task );
 
 
 } );

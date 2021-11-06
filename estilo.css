@@ -43,3 +43,34 @@
     background-color: #72bcd4;
 
 }
+
+.bordes{
+
+    border: black 1px solid;
+    border-radius: 4px;
+    padding: 8px;
+
+}
+
+#pendig-tasks{
+
+    margin-top: 40px;
+    width: 480px;
+    padding: 20px;
+    margin-left: 20px;
+    border: black 1px solid;
+    border-radius: 4px;
+    overflow-y: scroll;
+
+}
+
+.task{
+
+    width: 450px;
+
+}
+
+.container-flex{
+    display: flex;
+    justify-content: space-between;
+}
