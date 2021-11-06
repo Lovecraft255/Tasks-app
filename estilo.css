@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'UItalica';
+    src: url("Font/Ubiquitous\ Italic.ttf");
+  }
+
+@font-face {
+    font-family: 'Ubi';
+    src: url("Font/Ubiquitous.ttf");
+  }
+
+
 #add-task{
 
     border: black 1px solid;
@@ -14,6 +25,7 @@
     display: block;
     width: 180px;
     margin-bottom: 18px;
+    font-family: 'UItalica';
 
 }
 
@@ -26,6 +38,7 @@
     height: 80px;
     overflow-x: auto;
     overflow-y: auto;
+    font-family: 'Ubi';
 
 }
 
@@ -49,6 +62,7 @@
     border: black 1px solid;
     border-radius: 4px;
     padding: 8px;
+    margin-top: 10px;
 
 }
 
@@ -74,3 +88,4 @@
     display: flex;
     justify-content: space-between;
 }
+
