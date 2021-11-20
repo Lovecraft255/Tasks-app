@@ -26,6 +26,10 @@ function addTask( task ){
 
     checkTask.setAttribute("type" , "checkbox");
 
+    checkTask.setAttribute("id" , "check" + taskCount);
+
+    checkDesc.setAttribute("id" , "label" + taskCount);
+
     checkDesc.textContent = "Marcar tarea como completada";
 
     eliminateBtn.classList.add("fa-trash-alt");
@@ -101,22 +105,42 @@ penndingTaskDiv.addEventListener( "click" , (e) => {
 
         let parentId= parent.getAttribute('id');
 
-        let tarea = penndingTask.splice( parentId , 1);
+        let check = parent.querySelector( "#check" + parentId );
 
-        console.log(tarea);
+        let label = parent.querySelector( "#label" + parentId);
+
+        let tarea = penndingTask.splice( parentId , 1);
 
         completeTask.push( tarea );
 
-        console.log( completeTask );
-
         parent.remove();
+
+        parent.removeChild( check );
+
+        parent.removeChild( label );
 
         completeTaskDiv.append( parent );
 
     }
 
 } )
-  
+
+completeTaskDiv.addEventListener( "click" , (e) => {
+
+    console.log( e.target.tagName );
+
+    if( e.target.tagName == "BUTTON" ){
+
+        console.log( e.target.parentElement );
+
+        const parent = e.target.parentElement;
+
+        parent.remove();
+
+        alert( "Se eliminara la tarea" );
+
+    } 
+})
 
 btnAdd.addEventListener( "click" , () => {
 
