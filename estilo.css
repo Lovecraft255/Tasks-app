@@ -68,6 +68,20 @@
 
 #pendig-tasks{
 
+    display: inline-block;
+    margin-top: 40px;
+    width: 480px;
+    padding: 20px;
+    margin-left: 20px;
+    border: black 1px solid;
+    border-radius: 4px;
+    overflow-y: scroll;
+
+}
+
+#complete-tasks{
+
+    display: inline-block;
     margin-top: 40px;
     width: 480px;
     padding: 20px;
@@ -84,8 +98,28 @@
 
 }
 
-.container-flex{
-    display: flex;
-    justify-content: space-between;
+.icon-size{
+    width: 20px;
+    height: auto;
+    display: inline-block;
+
 }
 
+.button-size{
+
+    width: 40px;
+    height: auto;
+
+}
+
+.title-pend{
+
+    font-family: 'UItalica';
+
+}
+
+.title-comp{
+
+    font-family: 'UItalica';
+
+}
