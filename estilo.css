@@ -1,35 +1,36 @@
 @font-face {
     font-family: 'UItalica';
     src: url("Font/Ubiquitous\ Italic.ttf");
-  }
+}
 
 @font-face {
     font-family: 'Ubi';
     src: url("Font/Ubiquitous.ttf");
-  }
+}
 
 
-#add-task{
+#add-task {
 
     border: black 1px solid;
     border-radius: 4px;
     width: 450px;
     height: auto;
-    margin-left: 440px;
+    margin: 0 auto;
     padding: 10px;
 
 }
 
-#task-name{
+#task-name {
 
     display: block;
     width: 180px;
     margin-bottom: 18px;
+    margin: 0 auto;
     font-family: 'UItalica';
 
 }
 
-#task-desc{
+#task-desc {
 
     margin-top: 18px;
     margin-bottom: 18px;
@@ -42,22 +43,22 @@
 
 }
 
-#btn-add{
+#btn-add {
 
     margin-left: 365px;
     background-color: #add8e6;
     border: #add8e6 1px solid;
     border-radius: 4px;
-    
+
 }
 
-#btn-add:hover{
+#btn-add:hover {
 
     background-color: #72bcd4;
 
 }
 
-.bordes{
+.bordes {
 
     border: black 1px solid;
     border-radius: 4px;
@@ -66,60 +67,67 @@
 
 }
 
-#pendig-tasks{
+#pendig-tasks {
 
     display: inline-block;
-    margin-top: 40px;
+    margin: 0 auto;
     width: 480px;
     padding: 20px;
-    margin-left: 20px;
     border: black 1px solid;
     border-radius: 4px;
     overflow-y: scroll;
 
 }
 
-#complete-tasks{
+#complete-tasks {
 
     display: inline-block;
-    margin-top: 40px;
+    margin: 0 auto;
     width: 480px;
     padding: 20px;
-    margin-left: 20px;
     border: black 1px solid;
     border-radius: 4px;
     overflow-y: scroll;
 
 }
 
-.task{
+.task {
 
     width: 450px;
 
 }
 
-.icon-size{
+.icon-size {
     width: 20px;
     height: auto;
     display: inline-block;
 
 }
 
-.button-size{
+.button-size {
 
     width: 40px;
     height: auto;
 
 }
 
-.title-pend{
+.title-pend {
 
     font-family: 'UItalica';
 
 }
 
-.title-comp{
+.title-comp {
 
     font-family: 'UItalica';
+
+}
+
+#tasks {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
